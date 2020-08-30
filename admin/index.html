@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Jignyasa Patel - Admin</title>
+    <style>
+        .fancy{ font-family: 'Amatic SC', serif; font-weight: bold;font-size:70px}
+        .card:hover{transform: translate(0, -10px); transition: 0.3s;}
+    </style>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCcSpxONc5fG1-fltYXLQMjOvIN3AUSUQ8",
+            authDomain: "my-website-c50c2.firebaseapp.com",
+            databaseURL: "https://my-website-c50c2.firebaseio.com",
+            projectId: "my-website-c50c2",
+            storageBucket: "my-website-c50c2.appspot.com",
+            messagingSenderId: "851012674586",
+            appId: "1:851012674586:web:ebf7e99a136a9a681a5da3"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+  </head>
+
+  <body style="background-image: url('bg.jpg');background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+
+    <div class="container mt-5">
+        <h1 class="fancy m-5">Hello, Jignyasas!</h1>
+
+        <div class="row">
+
+            <!-- Add New Blog -->
+            <div class="col-lg-4">
+                <div class="card  text-white bg-primary mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title">Add New Blog</h5>
+                    </div>
+                    <div class="card-body">
+                      <h6>Requirements: </h6>
+                      <p class="card-text">
+                        1. Blog Title <br>
+                        2. Blog Header Image <br>
+                        3. Blog Content <br>
+                        -------------------------- <br>
+                        <i>Optional Content: </i><br>
+                        1. Want to update on "Recent Blogs" <br>
+                        2. Short Description for Recent blogs
+                      </p>
+                      <a type="button" class="btn btn-light" data-toggle="modal" data-target="#NewBlog">Add Now!</a>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Upload New Image to Gallery -->
+            <div class="col-lg-4">
+                <div class="card text-black bg-warning mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title">Upload New Image to Gallery</h5>
+                    </div>
+                    <div class="card-body">
+                      <h6>Requirements: </h6>
+                      <p class="card-text">
+                        1. High Resolution Image to Upload<br>
+                        2. Low Resolution version for thumbnail<br>
+                        <br><br><br><br><br>
+                      </p>
+                      <!-- Button trigger modal -->
+                      <a type="button" class="btn btn-light" data-toggle="modal" data-target="#NewGallery">Add Now!</a>
+                    </div>
+                  </div>
+            </div>
+
+
+            <!-- Upload New Image of the Day -->
+            <div class="col-lg-4">
+                <div class="card text-white bg-info mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title">Upload New Image of the Day</h5>
+                    </div>
+                    <div class="card-body">
+                      <h6>Requirements: </h6>
+                      <p class="card-text">
+                        1. High Resolution Image to Upload<br>
+                        2. Low Resolution version for thumbnail<br>
+                        <br><br><br><br><br>
+                      </p>
+                      <!-- Button trigger modal -->
+                      <a type="button" class="btn btn-light" data-toggle="modal" data-target="#NewIOTD">Add Now!</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Modal for New Blog -->
+        <div class="modal fade" id="NewBlog" tabindex="-1" role="dialog" aria-labelledby="NewBlogTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="NewBlogTitle">Upload New Image to Gallery</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                          <label for="Blogtitle">Blog Title</label>
+                          <input type="text" class="form-control" id="Blogtitle">
+                        </div>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" accept='image/*' id="BlogImage">
+                          <label class="custom-file-label" for="BlogImage">Choose High Res Image</label>
+                        </div>
+                        <br><br>
+                        <div class="form-group">
+                            <label for="BlogContent">Blog Content</label>
+                            <textarea class="form-control" id="BlogContent" rows="6"></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="wantRecent">
+                            <label class="form-check-label" for="wantRecent">Want to update on "Recent Blogs"</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="BlogContent" class="text-muted">Blog Description</label>
+                            <textarea class="form-control" id="BlogContent" rows="3" disabled></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Upload Files</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal for Upload New Image to Gallery -->
+        <div class="modal fade" id="NewGallery" tabindex="-1" role="dialog" aria-labelledby="NewGalleryTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="NewGalleryTitle">Upload New Image to Gallery</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" accept='image/*' id="galleryMain">
+                          <label class="custom-file-label" for="galleryMain">Choose High Res Image</label>
+                        </div>
+                        <br><br>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" accept='image/*' id="galleryThumb">
+                            <label class="custom-file-label" for="galleryThumb">Choose Image THUMBNAIL (< 200Kb Size)</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="uploadGallery()">Upload Files</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal for Upload New Image of the Day -->
+        <div class="modal fade" id="NewIOTD" tabindex="-1" role="dialog" aria-labelledby="NewIOTDTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="NewIOTDTitle">Upload New Image of the Day</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" accept='image/*' id="IOTDMain">
+                          <label class="custom-file-label" for="IOTDMain">Choose High Res Image</label>
+                        </div>
+                        <br><br>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" accept='image/*' id="IOTDThumb">
+                            <label class="custom-file-label" for="IOTDThumb">Choose Image THUMBNAIL (< 200Kb Size)</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="uploadIOTD()">Upload Files</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script>
+      // Add the following code if you want the name of the file appear on select
+      $(".custom-file-input").on("change", function() {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+      });
+    </script>
+  </body>
+</html>

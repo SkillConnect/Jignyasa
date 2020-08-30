@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Jignyasa Patel</title>
+    <meta content="Jignyasa Patel, a visual artist and a zentangle certified educator with over 9 years of experience and a master's degree" name="description">
+    <meta content="Jignyasa Patel, jignyaspatel, artist, paintings, educator" name="keywords">
+    <meta content="Jignyasa Patel, jignyaspatel, artist, paintings, educator" name="og:title">
+    <meta content="Jignyasa Patel, a visual artist and a zentangle certified educator with over 9 years of experience and a master's degree" name="og:description">
+    <meta content="Jignyasa Patel, jignyaspatel, artist, paintings, educator" name="twitter:title">
+    <meta property="og:type" content="website"/>
+
+    <!-- Favicons -->
+    <link href="assets/favicon.ico" rel="icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/lightGallery/css/lightgallery.css" rel="stylesheet">
+    <link href="assets/css/gallery.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCcSpxONc5fG1-fltYXLQMjOvIN3AUSUQ8",
+            authDomain: "my-website-c50c2.firebaseapp.com",
+            databaseURL: "https://my-website-c50c2.firebaseio.com",
+            projectId: "my-website-c50c2",
+            storageBucket: "my-website-c50c2.appspot.com",
+            messagingSenderId: "851012674586",
+            appId: "1:851012674586:web:ebf7e99a136a9a681a5da3"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <style media="screen">
+      #aniimated-thumbnials img{
+          width: 200px;
+      }
+    </style>
+
+  </head>
+
+  <body style="background-image:url('assets/img/bg/contact.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+    <!-- ======= Mobile Nav ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <h1 class="logo mr-auto"><a href="index.html" style="font-family:'Amatic SC';font-size:45px">Jignyasa<span> Patel</span></a></h1>
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+            <li><a href="explorations.html">Explorations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- <div class="container my-5" style="border-style: dashed; border-radius: 20px; padding: 2px"> -->
+    <div class="container" style="border: 50px solid transparent; padding: 5px;border-image: url('assets/img/gallery/frame.png') 30 stretch;" id="hero">
+      <div class="card" style="border-radius: 20px; padding: 20px 30px 20px;">
+        <h1 class="fancy" style="font-size: 65px; margin-left: 30px;"><b> My Artworks</b></h1> <br>
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio">
+          <div class="container" data-aos="fade-up">
+
+            <div class="row portfolio-container" id="gallery">
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/1.jpg">
+                  <img src="assets/img/venue-gallery/1.jpg" class="img-fluid">
+                  <div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/2.jpg">
+                <img src="assets/img/venue-gallery/2.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/3.jpg">
+                <img src="assets/img/venue-gallery/3.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/4.jpg">
+                <img src="assets/img/venue-gallery/4.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/5.jpg">
+                <img src="assets/img/venue-gallery/5.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/6.jpg">
+                <img src="assets/img/venue-gallery/6.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/7.jpg">
+                <img src="assets/img/venue-gallery/7.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/8.jpg">
+                <img src="assets/img/venue-gallery/8.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/9.jpg">
+                <img src="assets/img/venue-gallery/9.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/10.jpg">
+                <img src="assets/img/venue-gallery/10.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/11.jpg">
+                <img src="assets/img/venue-gallery/11.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/12.jpg">
+                <img src="assets/img/venue-gallery/12.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/13.jpg">
+                <img src="assets/img/venue-gallery/13.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+
+              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/14.jpg">
+                <img src="assets/img/venue-gallery/14.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
+              </div></div>
+            </div>
+
+          </div>
+        </section><!-- End Portfolio Section -->
+
+      </div>
+    </div>
+
+    <div class="container-fluid text-center sticky-bottom" id="footer">
+      <p>© 2020 <a>Jignyasa Patel</a> | All rights reserved</a></p>
+    </div>
+
+  </body>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/lightGallery/js/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightGallery/js/lg-thumbnail.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script>
+      loadGallery(1);
+      // $('#gallery').lightGallery({selector: '.portfolio-wrap'});
+      function enableLightGallery(){
+        $('#gallery').lightGallery({selector: '.portfolio-wrap'});
+      }
+    </script>
+  </html>
