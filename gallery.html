@@ -20,31 +20,29 @@
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/vendor/lightGallery/css/lightgallery.css" rel="stylesheet">
-    <link href="assets/css/gallery.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
-
-    <script>
-        var firebaseConfig = {
-            apiKey: "AIzaSyCcSpxONc5fG1-fltYXLQMjOvIN3AUSUQ8",
-            authDomain: "my-website-c50c2.firebaseapp.com",
-            databaseURL: "https://my-website-c50c2.firebaseio.com",
-            projectId: "my-website-c50c2",
-            storageBucket: "my-website-c50c2.appspot.com",
-            messagingSenderId: "851012674586",
-            appId: "1:851012674586:web:ebf7e99a136a9a681a5da3"
-        };
-        firebase.initializeApp(firebaseConfig);
-    </script>
-
+    <!-- LightGallery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css">
     <style media="screen">
       #aniimated-thumbnials img{
           width: 200px;
+      }
+      body {
+        background-image: linear-gradient(#e8f0ff 0%, white 52.08%);
+        color: #0e3481;
+        min-height: 100vh;
+      }
+      .header .lead {
+        max-width: 620px;
+      }
+      .gallery-item {
+        width: 200px;
+        padding: 5px;
       }
     </style>
 
@@ -68,78 +66,68 @@
       </div>
     </header>
     <!-- End Header -->
-
-    <!-- <div class="container my-5" style="border-style: dashed; border-radius: 20px; padding: 2px"> -->
     <div class="container" style="border: 50px solid transparent; padding: 5px;border-image: url('assets/img/gallery/frame.png') 30 stretch;" id="hero">
       <div class="card" style="border-radius: 20px; padding: 20px 30px 20px;">
-        <h1 class="fancy" style="font-size: 65px; margin-left: 30px;"><b> My Artworks</b></h1> <br>
+        <h1 class="fancy" style="font-size: 65px; margin-left: 30px;"><b> Best Moments</b></h1> <br>
 
-        <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio">
-          <div class="container" data-aos="fade-up">
-
-            <div class="row portfolio-container" id="gallery">
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/1.jpg">
-                  <img src="assets/img/venue-gallery/1.jpg" class="img-fluid">
-                  <div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/2.jpg">
-                <img src="assets/img/venue-gallery/2.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/3.jpg">
-                <img src="assets/img/venue-gallery/3.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/4.jpg">
-                <img src="assets/img/venue-gallery/4.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/5.jpg">
-                <img src="assets/img/venue-gallery/5.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/6.jpg">
-                <img src="assets/img/venue-gallery/6.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/7.jpg">
-                <img src="assets/img/venue-gallery/7.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/8.jpg">
-                <img src="assets/img/venue-gallery/8.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/9.jpg">
-                <img src="assets/img/venue-gallery/9.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/10.jpg">
-                <img src="assets/img/venue-gallery/10.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/11.jpg">
-                <img src="assets/img/venue-gallery/11.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/12.jpg">
-                <img src="assets/img/venue-gallery/12.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/13.jpg">
-                <img src="assets/img/venue-gallery/13.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
-
-              <div class="col-lg-3 col-md-4 portfolio-item"><div class="portfolio-wrap" data-src="assets/img/venue-gallery/14.jpg">
-                <img src="assets/img/venue-gallery/14.jpg" class="img-fluid"><div class="portfolio-info"><i class="fa fa-search fa-3x"></i></div>
-              </div></div>
+        <!-- Image Gallery -->
+        <div class="container-sm">
+          <div class="row justify-content-center">
+            <div class="col col-md-10">
+              <div class="gallery-container" id="animated-thumbnails-gallery">
+                <a class="gallery-item" data-src="./assets/docs/1.jpeg">
+                  <img class="img-responsive" src="./assets/docs/1.jpeg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/2.jpeg">
+                  <img class="img-responsive" src="./assets/docs/2.jpeg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/3.jpeg">
+                  <img class="img-responsive" src="./assets/docs/3.jpeg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/4.jpeg">
+                  <img class="img-responsive" src="./assets/docs/4.jpeg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/5.jpeg">
+                  <img class="img-responsive" src="./assets/docs/5.jpeg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/6.jpeg">
+                  <img class="img-responsive" src="./assets/docs/6.jpeg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/7.jpeg">
+                  <img class="img-responsive" src="./assets/docs/7.jpeg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/8.jpeg">
+                  <img class="img-responsive" src="./assets/docs/8.jpeg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/9.jpeg">
+                  <img class="img-responsive" src="./assets/docs/9.jpeg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/10.jpeg">
+                  <img class="img-responsive" src="./assets/docs/10.jpeg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/11.jpeg">
+                  <img class="img-responsive" src="./assets/docs/11.jpeg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/12.jpg">
+                  <img class="img-responsive" src="./assets/docs/12.jpg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/13.jpg">
+                  <img class="img-responsive" src="./assets/docs/13.jpg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/14.jpg">
+                  <img class="img-responsive" src="./assets/docs/14.jpg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/15.jpg">
+                  <img class="img-responsive" src="./assets/docs/15.jpg"/>
+                </a>
+                <a class="gallery-item" data-src="./assets/docs/16.jpg">
+                  <img class="img-responsive" src="./assets/docs/16.jpg"/>
+                </a>
+              </div>
             </div>
-
           </div>
-        </section><!-- End Portfolio Section -->
+        </div>
+        <!-- Gallery ends -->
 
       </div>
     </div>
@@ -153,15 +141,35 @@
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/lightGallery/js/lightgallery.min.js"></script>
-    <script src="assets/vendor/lightGallery/js/lg-thumbnail.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/gallery.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
     <script>
-      loadGallery(1);
-      // $('#gallery').lightGallery({selector: '.portfolio-wrap'});
-      function enableLightGallery(){
-        $('#gallery').lightGallery({selector: '.portfolio-wrap'});
-      }
+      jQuery("#animated-thumbnails-gallery")
+        .justifiedGallery({
+          captions: false,
+          rowHeight: 180,
+          margins: 5
+        })
+        .on("jg.complete", function () {
+          window.lightGallery(
+            document.getElementById("animated-thumbnails-gallery"),
+            {
+              autoplayFirstVideo: false,
+              pager: false,
+              galleryId: "nature",
+              plugins: [lgZoom, lgThumbnail],
+              mobileSettings: {
+                controls: false,
+                showCloseIcon: false,
+                download: false,
+                rotate: false
+              }
+            }
+          );
+        });
     </script>
   </html>

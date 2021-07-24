@@ -16,7 +16,7 @@
     <link href="assets/favicon.ico" rel="icon">
 
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap;Londrina+Sketch&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -24,7 +24,6 @@
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/css/gallery.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
 
@@ -34,26 +33,25 @@
           font-size: 50px; color:white;
         }
       .fancy{font-family: 'Amatic SC';}
-      .heading{font-family: 'Amatic SC';line-height: 200%; background-image:url('assets/img/index/text.png'); background-size: 100% 100%; background-repeat: no-repeat; padding-left: 40px}
+      .heading{
+        font-family: 'Amatic SC'; font-size: 50px;
+        color: #106eea;
+        line-height: 200%; 
+        background-image:url('assets/img/index/text.png');
+        background-size: 100% 100%; background-repeat: no-repeat; padding-left: 40px}
       .active{font-weight: bold;}
+      .vertical-center {
+        /* margin: 0; */
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
       body, .card{color: black;}
     </style>
   </head>
 
   <body style="background-image:url('assets/img/bg/index.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
-    <!-- Desktop Nav -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light justify-content-center" id="main-nav" style="height:80px;background-color:#efefef;display: none">
-      <div class="collapse navbar-collapse position-absolute" id="navbarTogglerDemo02" >
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="bio.html">Bio</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="explorations.html">Explorations</a></li>
-        </ul>
-      </div>
-    </nav> -->
 
     <!-- ======= Mobile Nav ======= -->
     <header id="header" class="fixed-top">
@@ -85,140 +83,175 @@
     </div>
 
     <div class="container">
-      <div class="row">
-
-        <!-- Main Area -->
+      <div class="row mb-4">
+        <!-- Profile Summary -->
         <div class="col-lg-8">
-          <h2 class="heading" style="font-size: 50px;"><b>Recent Blogs</b></h2>
-
-          <div style="background-image: url('assets/img/index/blog.png'); background-repeat: no-repeat;background-size: cover; color: black; padding:80px 70px 20px 120px;width: 100%;">
-            <div class="card mb-3" style="border:0;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="assets/img/gallery/2.jpg" class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body" style="padding: unset;">
-                    <h5 class="card-title">Blog title 2</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <a href="blog.html" class="btn btn-warning">Read More</a>
-                    <i class="fa fa-heart-o pl-5" style="color: red;"></i> 50
-                    <i class="fa fa-thumbs-up pl-2" style="color: blue;"></i> 150
-                    <p class="card-text"><small class="text-muted">Date: 20th august, 2020 </small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <h2 class="heading"><b>Profile Summary</b></h2>
+          <div class="card" style="padding:30px;background-color: #f1f1f1;">
+            <h3 style="font-family: 'Indie Flower';">
+              > A goal-oriented professional with 8 years of experience in Teaching, Learning & Development, Education Management
+              and School Administration and creative arts <br><br>
+              > Played a major role in creating awareness among the students on essentials of the IGCSE Art & Design and IB Visual
+              Art Curriculum; acted as an Examiner for ICSE Art Paper 1 and IB Visual Arts Examiner <br><br>
+              > Organized workshops & gallery visits to provide exposure of culture and contemporary art to students
+              > Proactive in working with the administration in facilitating intellectual growth by creating an atmosphere of
+              mutual respect and open communication <br><br>
+              > Worked as a Visual Artist and participated in various exhibitions like World Art Dubai, 2018 and Carrousel du
+              Louvre Spring Salon in the Louvre, Paris, France on 25-27 May 2018 and ‘La Tete d'Or“, Belgium, 2018 <br><br>
+              > Accomplished in establishing and implementing program review and outcome assessment criteria, standards,
+              systems and procedures; integrating the same into future departmental planning <br><br>
+              > Expertise in encouraging learning among students using interactive discussions, assessment tools, creative lesson
+              planning, individualized education plans and ‘hands-on’ approaches to help students learn the subjects <br><br>
+              > Proficient in creating a challenging & innovative teaching / learning atmosphere which empowers the active learner
+            </h3>
           </div>
-
-          <!-- ======= Venue Section ======= -->
-          <section id="venue">
-            <div class="container-fluid">
-              <div class="section-header">
-                <h2 class="heading" style="font-size: 50px;"><b>Gallery</b></h2>
-              </div>
-            </div>
-
-            <div class="container-fluid venue-gallery-container">
-              <div class="card" style="padding:30px;background-color: #f1f1f1;">
-                <div class="row no-gutters">
-
-                  <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                      <a href="assets/img/venue-gallery/1.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="assets/img/venue-gallery/1.jpg" alt="" class="img-fluid">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                      <a href="assets/img/venue-gallery/2.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="assets/img/venue-gallery/2.jpg" alt="" class="img-fluid">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                      <a href="assets/img/venue-gallery/3.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="assets/img/venue-gallery/3.jpg" alt="" class="img-fluid">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                      <a href="assets/img/venue-gallery/4.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="assets/img/venue-gallery/4.jpg" alt="" class="img-fluid">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                      <a href="assets/img/venue-gallery/5.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="assets/img/venue-gallery/5.jpg" alt="" class="img-fluid">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                      <a href="assets/img/venue-gallery/6.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="assets/img/venue-gallery/6.jpg" alt="" class="img-fluid">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                      <a href="assets/img/venue-gallery/7.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="assets/img/venue-gallery/7.jpg" alt="" class="img-fluid">
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-4">
-                    <div class="venue-gallery">
-                      <a href="assets/img/venue-gallery/8.jpg" class="venobox" data-gall="venue-gallery">
-                        <img src="assets/img/venue-gallery/8.jpg" alt="" class="img-fluid">
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-            <div class="text-center mt-4">
-              <img src="assets/img/index/button.png" style="cursor:pointer" onclick="window.open('gallery.html')">
-            </div>
-          </section><!-- End Venue Section -->
-
         </div>
 
         <!-- Sidebar -->
         <div class="col-lg-4 text-center">
-
-          <div style="background-image:url('assets/img/index/iofd.png');background-repeat:no-repeat;width:100%;height: 500px;background-size:contain">
-            <h3 class="fancy pt-5" style="font-size: 50px;"><b>Image of the Day!</b></h3>
-            <img src="assets/img/index/pic.png" style="width: 90%; margin-top:-20px">
+          <!-- Twitter Insta -->
+          <div class="card mb-3" style="border-radius: 20px; padding: 10px;">
+              <div class="row">
+                <div class="col-5">
+                  <img src="assets/img/social/twitter.png"> 
+                </div>
+                <div class="col-7">
+                  <h3 style="font-family: 'Indie Flower';" class="vertical-center">
+                    <button class="btn btn-lg btn-block"style="background-color: #1DA1F2; color: white">@Jignyasa_P</button>
+                  </h3>
+                </div>
+              </div>
+          </div>
+          <div class="card mb-3" style="border-radius: 20px; padding: 10px;">
+            <div class="row">
+              <div class="col-5">
+                <img src="assets/img/social/insta.png"> 
+              </div>
+              <div class="col-7">
+                <h3 style="font-family: 'Indie Flower';" class="vertical-center">
+                  <button class="btn btn-lg btn-block" style="background-color: #E1306C; color: white">@Jignyasa_P</button>
+                </h3>
+              </div>
+            </div>
           </div>
 
-          <!-- <h2 class="fancy mt-3 mb-2" style="font-size: 50px;"><b>Image of the Day!</b></h2>
-          <img src="assets/img/index/pic.png" style="width: 120%;"> -->
-
+          <!-- Book -->
           <div style="background-image:url('assets/img/index/book.png');background-repeat:no-repeat;width:100%;height: 500px;background-size:contain">
-              <!-- <h2 class="heading mt-3 mb-2" style="font-size: 50px; background-size: 100% 100%"><b>Latest Books</b></h2> -->
-              <h2 class="fancy pt-3 mb-2" style="font-size: 50px"><b>Latest Books</b></h2>
-              <img src="assets/img/books/1.jpg">
-              <h5> <br>
-                <b>Pieces to Masterpiece</b><br>
-                <a href="https://www.amazon.com/Pieces-Masterpiece-Jignyasa-Patel-ebook/dp/B08LHFT72C" target="_blank"><i>Available on Amazon</i></a>
-              </h5>
-            </div>
+            <h2 class="fancy pt-3 mb-2" style="font-size: 50px"><b>Latest Books</b></h2>
+            <img src="assets/img/books/1.jpg">
+            <h5> <br>
+              <b>Pieces to Masterpiece</b><br>
+              <a href="https://www.amazon.com/Pieces-Masterpiece-Jignyasa-Patel-ebook/dp/B08LHFT72C" target="_blank"><i>Available on Amazon</i></a>
+            </h5>
+          </div>
 
+          <!-- Download CV -->
+          <div class="card mb-3" style="border-radius: 20px; padding: 10px;">
+            <div class="row">
+              <div class="col-5">
+                <img src="assets/img/social/cv.jpg"> 
+              </div>
+              <div class="col-7">
+                <h3 style="font-family: 'Indie Flower';" class="vertical-center">
+                  <a class="btn btn-lg btn-block" 
+                    style="background-color: #E1306C; color: white" 
+                    href="assets/docs/Jignyasa_Patel_CV.pdf" target="_blank">
+                    Download CV
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Download Achievements -->
+          <div class="card mb-3" style="border-radius: 20px; padding: 20px;">
+            <div class="row">
+              <div class="col-5">
+                <img src="assets/img/social/achievements.png"> 
+              </div>
+              <div class="col-7">
+                <h3 style="font-family: 'Indie Flower';" class="vertical-center">
+                  <a class="btn btn-lg btn-block" 
+                    style="background-color: #794dff; color: white" 
+                    href="assets/docs/Jignyasa Patel achievements.pdf" target="_blank">
+                    My Achievements
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Academic Details -->
+      <h2 class="heading"><b>Academic Details</b></h2>
+      <div class="card mb-4" style="padding:30px;background-color: #f1f1f1;">
+        <h3 style="font-family: 'Indie Flower';">
+          > MA (Graphic Communication) from UCCA (University College for Creative
+          Arts), Farnham, Surrey in 2008 <br>
+          > BA (Fine Arts) from Rachana Sansad College of Applied Arts, Mumbai, affiliated
+          to Mumbai University in 2007 <br><br>
+          <b>Other Courses:</b> <br>
+          > Initial Diploma in Art Therapy, Metafora, Barcelona, Spain, 2014 <br>
+          > Diploma in Advanced Calligraphy from The British Institutes, Mumbai in 2006 <br>
+          > Basic Course in Calligraphy from Achyut Palav Calligraphy Workshop in 2006
+        </h3>
+      </div>
+
+      <div class="row mb-4">
+        <!-- Organizational Experience -->
+        <div class="col-lg-8">
+          <h2 class="heading"><b>Organizational Experience</b></h2>
+          <div class="card mb-4" style="padding:30px;background-color: #f1f1f1;">
+            <h3 style="font-family: 'Indie Flower';">
+              > <b>GEMS Modern Academy</b>, Dubai from Aug’15 – Present as Head of the Department, IB, ICSE and ISC <br>
+              > <b>Indian International School (The Sister School of IHS), Dubai</b> from Sep’13 –
+              Jan’14 as Art Teacher, Primary International, CBSE-I <br>
+              > <b>The Oxford School, Dubai</b> from Sep’12- Jun’13 as Art & Design Coordinator and Teacher <br>
+              > <b>Dr. Pillai’s Global Academy, New Panvel</b> from May’10- Jul’12 as HOD arts,
+              Visual Art (IB) and Art & Design Teacher (CIE) <br>
+              > <b>Dehleez Design House, Navi Mumbai</b> from Sep’09- Apr’10 as Graphic Designer <br>
+              > <b>Avalon International High School, Kopar Khairane</b> from May’09 - Nov’09 as
+              Art Teacher <br>
+              > <b>Marks & Spencer’s, Ealing, UK</b> from Oct’08- Jan’09 as Window Display Assistant <br>
+              > <b>Abhay Advertising, Navi Mumbai</b> from May’05- Dec’05 as Visualizer <br>
+              > <b>Summer Camp by Dr. Shirurkar, C.B.D., Navi Mumbai</b> from May’04- Jun’04 as 
+              Art & Craft Teacher
+            </h3>
+          </div>
+          <div style="padding:7px;background-color: #f1f1f1;">
+            <h3 style="font-family: 'Indie Flower';" class="text-center">
+              <b><a href="assets/docs/Jignyasa_Patel_CV.pdf" target="_blank" style="color: #106eea;">Click here for the Entire CV</a></b>
+            </h3>
+          </div>
+        </div>
+
+        <!-- Core Competencies -->
+        <div class="col-lg-4">
+          <h2 class="heading"><b>Core Competencies</b></h2>
+          <div class="card mb-4" style="padding:30px;background-color: #f1f1f1;">
+            <h3 style="font-family: 'Indie Flower';">
+              Teaching <br>
+              Education Management <br>
+              School Administration <br>
+              Learning & Development <br>
+              Student Management <br>
+              Curriculum Implementation <br>
+              Classroom Management <br>
+              Parent & Community Interaction <br>
+              Team Building & Leadership
+            </h3>
+          </div>
+
+          <h2 class="heading"><b>Skill Set</b></h2>
+          <div class="card mb-4" style="padding:30px;background-color: #f1f1f1;">
+            <h3 style="font-family: 'Indie Flower';">
+              Motivator <br>
+              Communicator <br>
+              Change Agent <br>
+              Collaborator
+            </h3>
+          </div>
         </div>
       </div>
     </div>
